@@ -155,5 +155,7 @@
 \makeevenfoot{emptywhitepaper}{}{}{}
 
 \copypagestyle{chapter}{whitepaper}
+\makeoddfoot{chapter}{}{}{}
+\makeevenfoot{chapter}{}{}{}
 \makeoddhead{chapter}{}{}{}
 \makeevenhead{chapter}{}{}{}
