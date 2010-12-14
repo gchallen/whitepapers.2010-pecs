@@ -12,6 +12,7 @@
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{memoir}}
 \ProcessOptions
 \LoadClass[onecolumn,oneside,final]{memoir}
+\RequirePackage{datetime}
 
 % 22 Oct 2010 : GWA : Set up simple chapter headings.
 
@@ -69,6 +70,7 @@
   \def\shortciteA{\def\citeauthoryear##1##2##3{##2}\@internalcite}
   \def\citeyear{\def\citeauthoryear##1##2##3{##3}\@internalcite}
 
+\mmddyyyydate
 \makechapterstyle{proposal}{%
   \renewcommand{\chapterheadstart}{}
   \renewcommand{\printchaptername}{} 
@@ -80,12 +82,16 @@
 \vspace{0pt}
 \raggedright
 \Large\scshape\MakeUppercase{##1}
+\vspace*{0.15in}
 \end{minipage}
 \begin{minipage}[t]{0.18\textwidth}
 \vspace{0pt}
 \raggedleft
-{\scshape WhitePaper}
-\end{minipage}}
+{\small \scshape Whitepaper
+\today}
+\end{minipage}
+{\large\theauthors}
+}
   \renewcommand{\afterchaptertitle}{\vspace{0.5\onelineskip} \hrule \vspace{0.5\onelineskip}}
 } 
 \makechapterstyle{letter}{%
@@ -145,8 +151,8 @@
 %\addtopsmarks{whitepaper}{}{%
 %\nouppercaseheads
 %\createmark{chapter}{left}{nonumber}{}{}}
-\makeoddhead{whitepaper}{{\scshape\shorttitle}}{}{{\scshape Whitepaper}}
-\makeevenhead{whitepaper}{{\scshape\shorttitle}}{}{{\scshape Whitepaper}}
+\makeoddhead{whitepaper}{{\scshape \small \shorttitle}}{}{{\scshape \small \shortauthors}}
+\makeevenhead{whitepaper}{{\scshape \small \shorttitle}}{}{{\scshape \small \shortauthors}}
 \makeoddfoot{whitepaper}{}{\thepage}{}
 \makeevenfoot{whitepaper}{}{\thepage}{}
 
