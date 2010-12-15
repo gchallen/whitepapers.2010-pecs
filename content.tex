@@ -1,137 +1,119 @@
-\section{Vision}
-
 Throughout the history of computing, testbeds have played major roles in
 advancing research. Multiple areas have reached a point at which small,
 limited, single-experiment instrumentation failed to provide the power, scale
-and realism needed to make progress. At each critical juncture, research
-communities conceived and built shared infrastructure that
-helped carry their field forward.
+and realism needed to make progress. \textbf{We believe smartphone research
+has reached this critical juncture.} Large-scale shared infrastructure is now
+needed.
 
-We believe that smartphone research has reached this critical moment.
-Smartphones are one of the most rapidly-adopted technologies in human history,
-and conference proceedings are bulging with papers attempting to harness the
-power of this emerging technology. As the smartphones change the way that we
-communicate and interact, scientists from a broad range of disciplines are
-anxious to study its effects and unlock its potential. But all of these efforts
-are stalled by the lack of a testbed remotely approximating the reality we are
-witnessing.
+\section{Vision}
 
-We envision a publicly-available smartphone testbed called \emph{PhoneLab} that
-enables smartphone operating system and mobile application research in a
-realistic environment at a scale not previously possible. PhoneLab will consist
-of a large number of (say 1,000) reprogrammable Android devices used by
-students, staff, and faculty in a university campus, and will be supported by a
-back-end data center. PhoneLab will provide \emph{power}, allowing the
-modification of smartphone software above and below the OS-application
-interface, while simplifying instrumentation and data collection to
-facilitate efficient experimentation. PhoneLab will provide \emph{scale},
-allowing researchers access to an order of magnitude more participants
-than typically used by smartphone studies. By minimizing experimental
-disturbance, PhoneLab will provide \emph{realism}, ensuring that participants
-use their smartphones as they would normally. Compared to the Apple AppStore
-or Android Market, PhoneLab will present a controlled, yet realistic
-environment with a large number of participants in one location. We believe that
-this will readily enable experiments on emerging research issues such as
-social networking, cyber-physical systems, smart environments, smartphone
-sensing, and crowd-sourcing. In addition, access to the operating
-system layer allows PhoneLab experimenters to perform studies that cannot be
-performed via the Apple AppStore or Android Market. We believe
-%that PhoneLab will accelerate research on phone cloud applications, networking,
-%infrastructure, and system software, providing a standardized environment
-%where experiments can be validated and competing approaches compared.
-that PhoneLab will accelerate research on smartphone-related areas,
-providing a standardized environment where experiments can be validated and
-competing approaches compared.
+Smartphones are one of the most rapidly-adopted technologies in history.
+Conference proceedings are bulging with papers attempting to harness their
+power, and as smartphones change the way that we communicate and interact,
+scientists from a broad range of disciplines are anxious to study their
+effects. But these efforts are stalled by the lack of a testbed remotely
+approximating the reality we are witnessing.
 
-We believe that our vision for PhoneLab can enable the next-generation of mobile
-cloud computing research by providing the above-mentioned power, scale, and
-realism. Considering the research impact of other similar testbeds --- EmuLab
-and PlanetLab on networking and distributed systems as well as MoteLab on sensor
-networking --- we anticipate that PhoneLab can accelerate mobile cloud computing
-research. In order to make this vision a reality, we are working on the
-first prototype of PhoneLab.
+We envision a publicly-available smartphone testbed called {\scshape
+PhoneLab} that enables smartphone operating system and mobile application
+research in a realistic environment at a scale not previously possible.
+{\scshape PhoneLab} will consist of a large number ---1,000 or more --- of
+reprogrammable Android devices used by students and staff at a university
+campus. {\scshape PhoneLab} will provide:
 
-\section{Potential Advances} To demonstrate the kinds of research that PhoneLab
-will enable, we identify four main research areas PhoneLab will help advance. 
+\begin{itemize}
 
-\emph{Applications:} PhoneLab will enable the community to tackle emerging
-research issues in a wide array of application domains such as crowd-sourcing,
-social networking, user interaction, environmental sensing, and epidemiology
-studies. For example, PhoneLab would provide a realistic experimentation
-platform for collecting smartphone sensing data, e.g., time-activity data of the
-environment for pollutant exposure estimation. PhoneLab could also assist
-the development of more realistic models such as human mobility models or
-social network models that will help advance the relevant research.
+\item \textbf{Power:} allowing the modification of smartphone software above
+and below the OS-application interface, while simplifying instrumentation and
+data collection to facilitate efficient experimentation.
 
-\emph{Infrastructure:} PhoneLab will also enable research into infrastructural
-issues such as environmental interaction, task distribution, and new wireless
-technologies. For example, we believe that PhoneLab can be instrumental in
-designing and developing of the cloud-backed smartphone infrastructure, which
-uses nearby computers or data centers. There are many research issues involved
-in this general direction, such as off-loading of computation, hierarchical
-storage designs that extend the limited smartphone storage to data centers, and
-privacy and security issues that arise when utilizing data centers.
+\item \textbf{Scale:} providing access to an order of magnitude more
+participants than typically used by smartphone studies.
 
-\emph{Networking:} PhoneLab will provide a great platform for networking
-research such as multi-radio issues, delay-tolerance, and peer-to-peer.
-Many research project investigate ways to utilize multiple communication
-technologies --- voice, SMS, WiMax, WiFi, Bluetooth --- each with its own
-capabilities and limitations. PhoneLab is the perfect testbed to experiment
-with an integrated networking layer that attempts to divide traffic between
-multiple radios to improve performance. Moreover, 4G is slowly gaining
-popularity among wireless providers, but there is little scientific study
-that reports 4G behaviors in the wild. PhoneLab will be a perfect testbed for
-this purpose.
+\item \textbf{Realism:} by minimizing experimental disturbance and allowing
+participants to use their smartphones naturally.
 
-\emph{Operating Systems:} PhoneLab will allow researchers to modify OS
-components, and help investigate issues such as mobile operating system
-design, distributed systems, energy management, and fault-tolerance. Operating
-systems issues will be easily tested and compared on PhoneLab as experimenters
-will have access to the same group of participants with the same usage patterns
-over time. For example, experimenters can run a number of different energy
-management schemes over the span of a few weeks and compare their behaviors.
+\end{itemize}
 
-%PhoneLab will consist of three layers --- phone, infrastructure, and
-%interface --- and we briefly describe how they work together to provide its
-%core functionality.
-%
-%\emph{Phone:} More than 1,000 next-generation Android
-%phones to PhoneLab participants. Android platform is chosen
-%because it is the only open-source mobile device operating system
-%currently available.  Access to the operating system layer allows
-%PhoneLab experimenters to perform studies that cannot be performed via
-%the Apple Store or Android Market.
-%
-%\emph{Infrastructure:} The infrastructure component of
-%PhoneLab will consist of 4G base stations and server infrastructure installed
-%on campus. 4G access points allow us to provide data access to our
-%participants for free --- a significant participation incentive --- while
-%producing a next-generation smartphone environment for experimentation. A
-%back-end data center will collect and store experimental data for further
-%analysis, while also allowing users to run code interacting with software
-%deployed on the phones.
-%
-%\emph{Interface:} The access layer will consist of interfaces used
-%by both users and participants. Users will use their interface to design,
-%schedule, and monitor their PhoneLab experiments. Participants will use
-%their interface to track the experiments they are part of and monitor the
-%information being collected about them.
+Compared to the Apple AppStore or Android Market, {\scshape PhoneLab}
+provides a controlled, yet realistic environment with a large number of
+participants in one location. We anticipate {\scshape PhoneLab} supporting
+experiments on emerging topics such as social networking, cyber-physical
+systems, smart environments, smartphone sensing, and crowd-sourcing. In
+addition, access to the operating system allows PhoneLab experimenters to
+perform studies that cannot be performed by installing applications. We
+believe that {\scshape PhoneLab} will accelerate research on
+smartphone-related areas by providing a standardized environment where
+experiments can be validated and competing approaches compared.
+
+Considering the research impact of other similar testbeds --- EmuLab and
+PlanetLab on networking and distributed systems, MoteLab on sensor networking
+--- we expect {\scshape PhoneLab} to accelerate mobile cloud computing
+research. To bring this vision to fruition, we are designing an initial
+{\scshape PhoneLab} prototype.
+
+\section{Potential Advances} To demonstrate the kinds of research that
+{\scshape PhoneLab} will enable, we identify four main research areas the
+testbed will advance. 
+
+\begin{itemize}
+
+\item \textbf{Applications:} {\scshape PhoneLab} will enable the community to
+tackle emerging research issues in a wide array of application domains such
+as crowd-sourcing, social networking, user interaction, environmental
+sensing, and epidemiology studies. For example, {\scshape PhoneLab} would
+provide an experimentation platform for collecting sensor data such as
+time-activity traces for pollutant exposure estimation. {\scshape PhoneLab}
+could also assist the development of more realistic human mobility or social
+network models.
+
+\item \textbf{Infrastructure:} {\scshape PhoneLab} will support research into
+infrastructural aspects such as environmental interaction, task distribution,
+and new wireless technologies. For example, we believe that {\scshape
+PhoneLab} can be instrumental in designing and developing a cloud-backed
+smartphone infrastructure using nearby computers or data centers. There are
+many research questions in this area concerning off-loading computation,
+hierarchical storage designs that extend the limited smartphone storage to
+data centers, and privacy and security issues arising from interaction with
+data centers.
+
+\item \textbf{Networking:} {\scshape PhoneLab} will provide an 
+environment for networking research such as multi-radio fusion,
+delay-tolerant protocols, and peer-to-peer interaction. Many research
+projects investigate ways to utilize multiple communication technologies ---
+voice, SMS, WiMax, WiFi, Bluetooth --- each with its own capabilities and
+limitations. {\scshape PhoneLab} would allow the deployment of an integrated
+networking layer that attempts to divide traffic between multiple radios to
+improve performance. Moreover, while 4G is slowly being adopted nationwide,
+there are few studies reporting 4G behavior in the wild.
+
+\item \textbf{Operating Systems:} {\scshape PhoneLab} will allow researchers
+to modify OS components, and help investigate issues such as mobile operating
+system design, distributed systems, energy management, and fault-tolerance.
+Operating systems modifications can be tested and compared on {\scshape
+PhoneLab} as experimenters will have access to the same group of participants
+with the same usage patterns over time. For example, experimenters can run a
+number of different energy management approaches over the span of a few weeks
+and compare the results.
+
+\end{itemize}
 
 \section{Investigators}
-We highlight each author's previous work most relevant to the topic of this
-white paper, \ie, small devices, cloud computing, and testbed design.
-\emph{Geoffrey Challen} developed and maintained MoteLab, the first wireless
-sensor network testbed consisting of 200 sensor nodes and supporting over
-700~users. \emph{Murat Demirbas} helped develop and deploy the ``Line In
-The Sand'' 100-node wireless sensor network for detection, classification,
-and tracking, which led to the 1,000-node ``ExScal'' network. \emph{Steven
-Ko} helped design the HP/Intel/Yahoo! OpenCirrus$^{TM}$ Cloud
-Computing Testbed, a federated multi-datacenter testbed spanning over
-14 institutions in US, Europe, and Asia and including more than one
-thousand servers. \emph{Tevfik Kosar} designed and developed both the
-Stork distributed data scheduling system currently used by institutions
-worldwide and the PetaShare distributed storage network that manages more
-than 700 Terabytes of storage located across nine university campuses in
-Louisiana.
+
+We briefly highlight each author's previous work most relevant to the topic
+of this white paper:
+
+\textbf{Geoffrey Challen} developed and maintained MoteLab, the first
+wireless sensor network testbed consisting of 200 sensor nodes and supporting
+over 700~users. \textbf{Murat Demirbas} helped develop and deploy the ``Line
+In The Sand'' 100-node wireless sensor network for detection, classification,
+and tracking, which led to the 1,000-node ``ExScal'' network. \textbf{Steven
+Ko} helped design the HP/Intel/Yahoo! OpenCirrus\texttrademark \space Cloud Computing
+Testbed, a federated multi-datacenter testbed spanning over 14 institutions
+in US, Europe, and Asia and including more than one thousand servers.
+\textbf{Tevfik Kosar} designed and developed both the Stork distributed data
+scheduling system currently used by institutions worldwide and the PetaShare
+distributed storage network that manages more than 700 Terabytes of storage
+located across nine university campuses in Louisiana.
 
 \end{document}
