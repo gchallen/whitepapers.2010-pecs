@@ -1,5 +1,6 @@
 START = xxxnote
 END = missing
+CLASS = $(PYTEX)/cls/whitepaper.cls
 
 all: whitepaper
 
@@ -7,4 +8,4 @@ all: whitepaper
 
 clean: rulesclean
 
-include Makerules
+include $(PYTEX)/make/Makerules
